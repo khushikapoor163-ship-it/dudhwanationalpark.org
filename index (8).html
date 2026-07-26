@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karavan — Wild Terai, Every Way You Travel</title>
+<meta name="description" content="Karavan runs school & college trips, family safaris, corporate offsites and solo naturalist trails into Dudhwa Tiger Reserve, the last wild Terai — since 1998.">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Karavan — Wild Terai, Every Way You Travel">
+<meta property="og:description" content="Schools, families, friends, corporates and solo travellers — expeditions into Dudhwa Tiger Reserve since 1998.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Karavan — Wild Terai, Every Way You Travel">
+<meta name="twitter:description" content="Schools, families, friends, corporates and solo travellers — expeditions into Dudhwa Tiger Reserve since 1998.">
+<meta name="twitter:image" content="og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800;900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canopy:#16302A;
+    --canopy-2:#1E3E33;
+    --canopy-3:#274C3F;
+    --moss:#6E9A79;
+    --moss-dim:#4C6E57;
+    --marigold:#D98E2B;
+    --marigold-dim:#B9791F;
+    --paper:#EDE6D5;
+    --paper-2:#F7F3E8;
+    --ink:#1E2A22;
+    --ink-soft:#4B5A4F;
+    --bone:#F4F1E6;
+    --line-on-dark:rgba(244,241,230,0.16);
+    --line-on-light:rgba(30,42,34,0.12);
+    --shadow-soft: 0 18px 40px rgba(10,20,15,0.18);
+    --radius-lg: 22px;
+    --radius-md: 14px;
+    --display: "Big Shoulders Display", sans-serif;
+    --body: "Work Sans", sans-serif;
+    --mono: "IBM Plex Mono", monospace;
+    --maxw: 1180px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--body);
+    background:var(--paper);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;margin:0;padding:0;}
+  h1,h2,h3{font-family:var(--display);margin:0;line-height:0.98;letter-spacing:0.2px;}
+  p{margin:0;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;height:1px;background:currentColor;display:inline-block;
+    opacity:0.7;
+  }
+  .on-dark .eyebrow{color:var(--marigold);}
+  .on-light .eyebrow{color:var(--marigold-dim);}
+
+  section{padding:108px 0;position:relative;}
+  .on-dark{background:var(--canopy);color:var(--bone);}
+  .on-light{background:var(--paper);color:var(--ink);}
+  .on-light.alt{background:var(--paper-2);}
+
+  .btn{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    padding:15px 26px;
+    border-radius:999px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--marigold);color:var(--canopy);}
+  .btn-primary:hover{background:#EBA13F;box-shadow:0 10px 26px rgba(217,142,43,0.35);}
+  .btn-ghost-dark{border-color:rgba(244,241,230,0.35);color:var(--bone);}
+  .btn-ghost-dark:hover{border-color:var(--bone);background:rgba(244,241,230,0.06);}
+  .btn-ghost-light{border-color:rgba(30,42,34,0.3);color:var(--ink);}
+  .btn-ghost-light:hover{border-color:var(--ink);background:rgba(30,42,34,0.05);}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(22,48,42,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(244,241,230,0.08);
+  }
+  .nav{
+    max-width:var(--maxw);margin:0 auto;padding:16px 28px;
+    display:flex;align-items:center;justify-content:space-between;gap:20px;
+  }
+  .brand{
+    display:flex;align-items:center;gap:10px;
+    font-family:var(--display);font-weight:700;
+    font-size:19px;color:var(--bone);letter-spacing:0.3px;
+  }
+  .brand-mark{
+    width:34px;height:34px;border-radius:50%;
+    background:var(--marigold);color:var(--canopy);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-weight:600;font-size:12px;
+    border:1.5px dashed rgba(30,42,34,0.5);
+  }
+  .nav-links{display:flex;align-items:center;gap:28px;}
+  .nav-links a{
+    font-family:var(--mono);font-size:12px;letter-spacing:1px;text-transform:uppercase;
+    color:var(--bone);opacity:0.78;transition:opacity .2s ease;
+  }
+  .nav-links a:hover{opacity:1;}
+  .nav-cta{display:flex;align-items:center;gap:16px;}
+  .nav-toggle{
+    display:none;background:none;border:1px solid rgba(244,241,230,0.35);
+    border-radius:8px;width:40px;height:40px;color:var(--bone);
+    align-items:center;justify-content:center;cursor:pointer;
+  }
+  .nav-toggle span{display:block;width:18px;height:1.5px;background:currentColor;position:relative;}
+  .nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:currentColor;}
+  .nav-toggle span::before{top:-6px;}
+  .nav-toggle span::after{top:6px;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:190px 0 110px;
+    background:
+      radial-gradient(circle at 82% 18%, rgba(217,142,43,0.16), transparent 42%),
+      repeating-radial-gradient(circle at 78% 30%, transparent 0 26px, rgba(244,241,230,0.05) 27px 28px),
+      linear-gradient(180deg, var(--canopy) 0%, #122720 100%);
+    color:var(--bone);
+    overflow:hidden;
+    position:relative;
+  }
+  .hero-inner{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;}
+  .hero-skyline{
+    position:absolute;left:0;right:0;bottom:0;width:100%;height:160px;
+    pointer-events:none;z-index:0;
+  }
+  .hero .eyebrow{color:var(--marigold);margin-bottom:26px;}
+  .hero h1{
+    font-size:clamp(44px, 7.2vw, 96px);
+    font-weight:800;
+    color:var(--bone);
+    text-transform:uppercase;
+    max-width:900px;
+  }
+  .hero .subhead{
+    font-family:var(--body);font-style:italic;font-weight:500;
+    font-size:clamp(19px,2.6vw,27px);color:var(--moss);
+    margin-top:14px;
+  }
+  .coords{
+    font-family:var(--mono);font-size:12.5px;letter-spacing:1.5px;
+    color:#9FB6A9;margin-top:28px;
+  }
+  .hero-copy{
+    max-width:600px;font-size:16.5px;line-height:1.7;color:#CBDACF;
+    margin-top:22px;
+  }
+  .hero-ctas{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap;}
+  .hero-stats{
+    margin-top:78px;
+    display:flex;flex-wrap:wrap;gap:0;
+    border-top:1px solid var(--line-on-dark);
+    padding-top:26px;
+  }
+  .hero-stats div{
+    flex:1 1 160px;padding:0 26px 0 0;border-right:1px solid var(--line-on-dark);
+  }
+  .hero-stats div:last-child{border-right:none;}
+  .hero-stats strong{
+    display:block;font-family:var(--display);font-size:30px;color:var(--marigold);font-weight:700;
+  }
+  .hero-stats span{
+    font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#9FB6A9;
+  }
+
+  /* ---------- DISCOVER DUDHWA ---------- */
+  .discover-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:44px;}
+  .habitat-illo{border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--line-on-light);background:#F7F3E8;margin-bottom:22px;}
+  .habitat-illo svg{display:block;width:100%;height:auto;}
+  .habitat-caption{display:block;padding:12px 16px;font-family:var(--mono);font-size:11px;color:var(--ink-soft);border-top:1px solid var(--line-on-light);}
+  .discover-copy p{font-size:15px;line-height:1.8;color:var(--ink-soft);}
+  .discover-copy p + p{margin-top:16px;}
+  .fact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  .fact-card{background:var(--paper-2);border:1px solid var(--line-on-light);border-radius:12px;padding:20px 20px;}
+  .fact-card .flabel{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--marigold-dim);}
+  .fact-card .fvalue{font-family:var(--body);font-weight:600;font-size:14.5px;color:var(--ink);margin-top:8px;line-height:1.4;}
+  .zone-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+  .zone-tag{
+    font-family:var(--mono);font-size:11px;letter-spacing:0.5px;padding:8px 14px;border-radius:999px;
+    border:1px solid var(--line-on-light);color:var(--ink-soft);
+  }
+
+  /* ---------- HOW TO REACH ---------- */
+  .reach-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;margin-top:44px;align-items:stretch;}
+  .reach-map{
+    min-height:360px;border-radius:var(--radius-md);overflow:hidden;
+    border:1px solid var(--line-on-light);filter:grayscale(0.15) contrast(1.02);
+  }
+  .reach-list{display:flex;flex-direction:column;gap:22px;}
+  .reach-item{border-top:1px solid var(--line-on-light);padding-top:18px;}
+  .reach-item:first-child{border-top:none;padding-top:0;}
+  .reach-label{
+    font-family:var(--mono);font-size:11px;letter-spacing:1.4px;text-transform:uppercase;
+    color:var(--marigold-dim);display:block;margin-bottom:8px;
+  }
+  .reach-item p{font-size:14px;line-height:1.65;color:var(--ink-soft);}
+  .reach-item p strong{color:var(--ink);}
+  .reach-list .btn{margin-top:6px;align-self:flex-start;}
+
+  /* ---------- EXPEDITIONS / TABS ---------- */
+  .section-head{max-width:680px;margin-bottom:20px;}
+  .section-head h2{font-size:clamp(32px,4.2vw,48px);font-weight:700;text-transform:none;margin-top:16px;}
+  .on-dark .section-head h2{color:var(--bone);}
+  .on-light .section-head h2{color:var(--ink);}
+  .section-head p{margin-top:16px;font-size:15.5px;line-height:1.7;}
+  .on-dark .section-head p{color:#B9C9BE;}
+  .on-light .section-head p{color:var(--ink-soft);}
+
+  .tab-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px;margin-bottom:44px;}
+  .tab-btn{
+    font-family:var(--mono);font-size:12px;letter-spacing:1px;text-transform:uppercase;
+    padding:13px 22px;border-radius:999px;border:1.5px solid var(--line-on-dark);
+    background:transparent;color:var(--bone);cursor:pointer;transition:all .2s ease;
+  }
+  .on-light .tab-btn{border-color:var(--line-on-light);color:var(--ink-soft);}
+  .tab-btn.active{background:var(--marigold);color:var(--canopy);border-color:var(--marigold);}
+  .tab-btn:not(.active):hover{border-color:var(--marigold);}
+
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block;animation:fadeIn .45s ease;}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+  .track-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:start;}
+  .track-kicker{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--marigold);}
+  .track-grid h3{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.2vw,36px);color:var(--bone);margin-top:12px;text-transform:none;}
+  .track-grid .track-copy{font-size:14.5px;line-height:1.75;color:#B9C9BE;margin-top:18px;max-width:520px;}
+  .track-highlights li{
+    display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line-on-dark);
+  }
+  .track-highlights li:last-child{border-bottom:1px solid var(--line-on-dark);}
+  .track-highlights .dot{width:7px;height:7px;border-radius:50%;background:var(--marigold);margin-top:8px;flex-shrink:0;}
+  .track-highlights span.h-text{font-size:13.5px;color:#DCE7DE;line-height:1.55;}
+  .track-cta{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;}
+
+  /* ---------- BADGES ---------- */
+  .badge-rail{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:26px;
+  }
+  .badge-card{
+    background:var(--canopy-2);border:1px solid rgba(244,241,230,0.1);
+    border-radius:var(--radius-lg);padding:34px 26px 28px;
+    transition:transform .35s ease, border-color .35s ease, background .35s ease;
+    opacity:0;transform:translateY(24px) rotate(var(--tilt,0deg));
+  }
+  .badge-card.in-view{opacity:1;transform:translateY(0) rotate(var(--tilt,0deg));}
+  .badge-card:hover{transform:translateY(-6px) rotate(0deg);border-color:var(--marigold);background:var(--canopy-3);}
+  .badge-card:nth-child(1){--tilt:-2deg;}
+  .badge-card:nth-child(2){--tilt:1.4deg;}
+  .badge-card:nth-child(3){--tilt:-1deg;}
+  .badge-card:nth-child(4){--tilt:1.8deg;}
+  .badge-card:nth-child(5){--tilt:-1.6deg;}
+  .badge-card:nth-child(6){--tilt:1.2deg;}
+  .badge-stamp{
+    width:64px;height:64px;border-radius:50%;
+    border:1.5px dashed rgba(217,142,43,0.55);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--marigold);margin-bottom:22px;
+  }
+  .badge-stamp svg{width:30px;height:30px;stroke:currentColor;fill:none;stroke-width:1.6;}
+  .badge-card h3{font-family:var(--body);font-weight:600;font-size:18px;color:var(--bone);}
+  .badge-subject{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;
+    color:var(--marigold);margin-top:8px;display:block;
+  }
+  .badge-card p{font-size:13.5px;line-height:1.6;color:#AFC1B5;margin-top:14px;}
+
+  /* ---------- ITINERARY ---------- */
+  .timeline{margin-top:50px;position:relative;padding-left:38px;}
+  .timeline::before{
+    content:"";position:absolute;left:9px;top:6px;bottom:6px;width:1px;
+    background:repeating-linear-gradient(to bottom, var(--moss-dim) 0 6px, transparent 6px 12px);
+  }
+  .day{position:relative;padding-bottom:44px;}
+  .day:last-child{padding-bottom:0;}
+  .day::before{
+    content:"";position:absolute;left:-38px;top:4px;width:18px;height:18px;border-radius:50%;
+    background:var(--paper);border:2px solid var(--marigold-dim);
+  }
+  .day-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+  .day-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--marigold-dim);}
+  .day h3{font-family:var(--body);font-weight:700;font-size:21px;color:var(--ink);}
+  .day p{margin-top:8px;font-size:14.5px;color:var(--ink-soft);max-width:560px;line-height:1.6;}
+  .itinerary-note{
+    margin-top:36px;font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);
+    border-top:1px solid var(--line-on-light);padding-top:22px;
+  }
+
+  /* ---------- STATS ---------- */
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;margin-top:20px;}
+  .why-copy p{font-size:15.5px;line-height:1.8;color:#B9C9BE;}
+  .why-copy p + p{margin-top:16px;}
+  .stamp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .stamp{
+    border:1px solid rgba(244,241,230,0.14);border-radius:var(--radius-md);
+    padding:26px 20px;text-align:center;
+  }
+  .stamp strong{display:block;font-family:var(--display);font-size:38px;color:var(--marigold);font-weight:700;}
+  .stamp span{font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:#9FB6A9;display:block;margin-top:8px;}
+
+  /* ---------- SAFETY ---------- */
+  .safety-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:46px;}
+  .safety-card{
+    background:var(--paper-2);border-radius:var(--radius-md);padding:28px 22px;
+    border:1px solid var(--line-on-light);
+  }
+  .safety-icon{
+    width:46px;height:46px;border-radius:10px;background:var(--canopy);color:var(--marigold);
+    display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+  }
+  .safety-icon svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;}
+  .safety-card h3{font-family:var(--body);font-weight:600;font-size:15.5px;color:var(--ink);}
+  .safety-card p{font-size:12.8px;line-height:1.6;color:var(--ink-soft);margin-top:10px;}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .postcards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:46px;}
+  .postcard{
+    background:var(--paper-2);border:1px solid var(--line-on-light);border-radius:var(--radius-md);
+    padding:28px 22px;transition:transform .3s ease;
+  }
+  .postcard:nth-child(1){transform:rotate(-1.2deg);}
+  .postcard:nth-child(2){transform:rotate(0.8deg);}
+  .postcard:nth-child(3){transform:rotate(-0.6deg);}
+  .postcard:nth-child(4){transform:rotate(1deg);}
+  .postcard:hover{transform:rotate(0deg) translateY(-4px);}
+  .postcard .mark{font-family:var(--display);font-size:40px;color:var(--marigold-dim);line-height:0.6;display:block;margin-bottom:12px;}
+  .postcard p.quote{font-size:13.5px;line-height:1.6;color:var(--ink);font-style:italic;}
+  .postcard .who{
+    margin-top:18px;padding-top:14px;border-top:1px solid var(--line-on-light);
+    font-family:var(--mono);font-size:10.5px;letter-spacing:0.5px;color:var(--ink-soft);text-transform:uppercase;
+  }
+
+  /* ---------- PRICING ---------- */
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px;}
+  .price-card{
+    border-radius:var(--radius-lg);padding:36px 28px;border:1px solid rgba(244,241,230,0.14);
+    background:var(--canopy-2);position:relative;
+  }
+  .price-card.popular{
+    background:var(--marigold);border-color:var(--marigold);color:var(--canopy);
+    transform:translateY(-14px);
+  }
+  .price-tag{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;
+    position:absolute;top:22px;right:26px;color:var(--canopy);
+  }
+  .price-card h3{font-family:var(--display);font-size:28px;font-weight:700;color:var(--bone);}
+  .price-card.popular h3{color:var(--canopy);}
+  .price-days{font-family:var(--mono);font-size:12px;color:#9FB6A9;margin-top:8px;display:block;}
+  .price-card.popular .price-days{color:#5A4113;}
+  .price-value{font-family:var(--display);font-size:34px;font-weight:700;color:var(--bone);margin-top:22px;}
+  .price-card.popular .price-value{color:var(--canopy);}
+  .price-sub{font-family:var(--mono);font-size:11px;color:#9FB6A9;margin-top:4px;}
+  .price-card.popular .price-sub{color:#5A4113;}
+  .price-feats{margin-top:24px;}
+  .price-feats li{
+    font-size:13px;padding:9px 0;border-top:1px solid rgba(244,241,230,0.12);color:#CBDACF;
+    display:flex;gap:8px;
+  }
+  .price-card.popular .price-feats li{border-top:1px solid rgba(30,42,34,0.16);color:#3E3013;}
+  .price-feats li:first-child{border-top:none;}
+  .price-card .btn{margin-top:26px;width:100%;justify-content:center;}
+  .pricing-note{margin-top:30px;font-family:var(--mono);font-size:12px;color:#9FB6A9;}
+  .pricing-note a{color:var(--marigold);border-bottom:1px solid rgba(217,142,43,0.4);}
+
+  /* ---------- GALLERY (merged, filterable) ---------- */
+  .gal-filter-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px;margin-bottom:40px;align-items:center;}
+  .gal-filter-btn{
+    font-family:var(--mono);font-size:11.5px;letter-spacing:1px;text-transform:uppercase;
+    padding:11px 20px;border-radius:999px;border:1.5px solid var(--line-on-dark);
+    background:transparent;color:var(--bone);cursor:pointer;transition:all .2s ease;
+  }
+  .gal-filter-btn.active{background:var(--marigold);color:var(--canopy);border-color:var(--marigold);}
+  .gal-filter-btn:not(.active):hover{border-color:var(--marigold);}
+  .gal-filter-count{font-family:var(--mono);font-size:11px;color:#9FB6A9;margin-left:auto;}
+
+  .g-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(244,241,230,0.1);}
+  .g-tile{
+    background:var(--canopy-2);padding:30px 22px;min-height:210px;
+    display:flex;flex-direction:column;justify-content:space-between;
+    transition:background .25s ease, transform .25s ease;
+    opacity:0;transform:translateY(16px);
+  }
+  .g-tile.in-view{opacity:1;transform:translateY(0);}
+  .g-tile:hover{background:var(--canopy-3);transform:translateY(-3px);}
+  .g-tile svg{width:30px;height:30px;stroke:var(--marigold);fill:none;stroke-width:1.5;}
+  .g-tile .cat{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:#9FB6A9;}
+  .g-tile h3{font-family:var(--body);font-weight:600;font-size:15.5px;color:var(--bone);margin-top:14px;}
+  .g-tile .desc{font-family:var(--body);font-size:11.5px;color:#AFC1B5;margin-top:6px;line-height:1.5;}
+  .g-tile.gal-hidden{display:none;}
+  .gal-note{
+    margin-top:34px;font-family:var(--body);font-size:12.5px;line-height:1.7;color:#9FB6A9;
+    max-width:640px;
+  }
+
+  /* ---------- CUSTOM PACKAGE ---------- */
+  .custom-package{
+    margin-top:56px;background:var(--canopy-2);border:1px dashed rgba(217,142,43,0.4);
+    border-radius:var(--radius-lg);padding:40px 36px;
+    display:grid;grid-template-columns:1fr 1.4fr auto;gap:30px;align-items:center;
+  }
+  .custom-copy h3{font-family:var(--display);font-size:26px;color:var(--bone);font-weight:700;margin-top:12px;}
+  .custom-copy p{font-size:13.5px;color:#B9C9BE;margin-top:10px;line-height:1.6;}
+  .custom-options{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .custom-option{border-top:1px solid var(--line-on-dark);padding-top:12px;}
+  .co-label{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--marigold);display:block;}
+  .co-val{font-size:13px;color:var(--bone);display:block;margin-top:6px;line-height:1.4;}
+  .custom-package .btn{justify-self:start;white-space:normal;text-align:center;}
+
+  /* ---------- INLINE BOOKING ---------- */
+  .booking-box{
+    margin-top:44px;background:var(--paper-2);border:1px solid var(--line-on-light);border-radius:var(--radius-lg);
+    padding:40px;display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start;
+  }
+  .booking-stepper{grid-column:1/-1;display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line-on-light);padding-bottom:20px;margin-bottom:8px;}
+  .bstep{font-family:var(--mono);font-size:11px;letter-spacing:0.5px;text-transform:uppercase;color:var(--ink-soft);padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--line-on-light);}
+  .bstep.active{background:var(--marigold);color:var(--canopy);border-color:var(--marigold);font-weight:600;}
+  .bstep.done{background:var(--moss);color:#fff;border-color:var(--moss);}
+  .bpanel{display:none;}
+  .bpanel.active{display:block;animation:fadeIn .35s ease;}
+  .bpkg-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .bpkg-card{border:2px solid var(--line-on-light);border-radius:12px;padding:22px;cursor:pointer;background:#fff;transition:all .2s ease;}
+  .bpkg-card:hover{border-color:var(--moss);}
+  .bpkg-card.selected{border-color:var(--marigold);background:#FFF9EF;}
+  .bpkg-card h4{font-size:19px;color:var(--ink);}
+  .bpkg-share{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:0.5px;}
+  .bpkg-price{font-family:var(--display);font-size:26px;color:var(--marigold-dim);font-weight:700;margin-top:10px;}
+  .bpkg-price small{font-family:var(--mono);font-size:10px;color:var(--ink-soft);font-weight:400;}
+  .bpkg-card ul{list-style:none;margin:14px 0 0;padding:0;}
+  .bpkg-card li{font-size:12.5px;color:var(--ink-soft);padding:6px 0;border-top:1px solid var(--line-on-light);}
+  .bpkg-card li:first-child{border-top:none;}
+  .bfield-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .bfield{display:flex;flex-direction:column;gap:6px;}
+  .bfield label{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-soft);}
+  .bfield input{padding:12px 14px;border:1.5px solid var(--line-on-light);border-radius:8px;font-family:var(--body);font-size:14px;background:#fff;color:var(--ink);}
+  .bfield input:focus{outline:2px solid var(--marigold);outline-offset:1px;border-color:var(--marigold);}
+  .bstepper{display:flex;align-items:center;gap:14px;}
+  .bstepper button{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--line-on-light);background:#fff;font-size:16px;cursor:pointer;}
+  .bstepper span{font-family:var(--display);font-size:20px;min-width:20px;text-align:center;}
+  .bhint{margin-top:18px;font-size:12.5px;color:var(--ink-soft);line-height:1.6;}
+  .bnav{display:flex;justify-content:space-between;margin-top:30px;}
+  .breview{border:1px solid var(--line-on-light);border-radius:10px;padding:18px;background:#fff;}
+  .breview .brow{display:flex;justify-content:space-between;padding:8px 0;font-size:13px;border-top:1px solid var(--line-on-light);}
+  .breview .brow:first-child{border-top:none;}
+  .breview .brow .k{color:var(--ink-soft);}
+  .breview .brow .v{font-weight:600;color:var(--ink);}
+  .bsuccess{text-align:center;padding:30px 10px;}
+  .bok{width:60px;height:60px;border-radius:50%;background:var(--ok, #3E7A4C);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 18px;}
+  .bsuccess h3{font-size:24px;color:var(--ink);}
+  .bsuccess p{margin-top:10px;color:var(--ink-soft);font-size:13.5px;line-height:1.6;}
+  .bconf{margin-top:16px;font-family:var(--mono);font-size:12px;background:var(--paper-2);border:1px dashed var(--line-on-light);display:inline-block;padding:8px 16px;border-radius:8px;}
+  .bsummary{background:var(--canopy);color:var(--bone);border-radius:12px;padding:24px;position:sticky;top:100px;}
+  .bsummary h4{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:var(--marigold);margin-bottom:16px;}
+  .bsummary .brow{display:flex;justify-content:space-between;font-size:13px;padding:9px 0;border-top:1px solid var(--line-on-dark);color:#CBDACF;}
+  .bsummary .brow:first-of-type{border-top:none;}
+  .bsummary .brow.total{margin-top:12px;padding-top:14px;border-top:1px solid var(--line-on-dark);font-family:var(--display);font-size:22px;color:var(--marigold);font-weight:700;}
+  @media (max-width:900px){
+    .booking-box{grid-template-columns:1fr;padding:26px;}
+    .bpkg-grid,.bfield-grid{grid-template-columns:1fr;}
+    .bsummary{position:static;}
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-band{
+    background:linear-gradient(120deg, var(--marigold) 0%, #C77E1F 100%);
+    color:var(--canopy);padding:90px 0;
+  }
+  .cta-inner{display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap;}
+  .cta-inner h2{font-size:clamp(30px,4.6vw,50px);font-weight:800;text-transform:none;max-width:600px;}
+  .cta-side{font-family:var(--mono);font-size:13px;line-height:2;}
+  .cta-side a{border-bottom:1px solid rgba(30,42,34,0.4);}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:#0F241F;color:#9FB6A9;padding:70px 0 30px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(244,241,230,0.08);}
+  .footer-brand .brand{color:var(--bone);}
+  .footer-brand p{margin-top:16px;font-size:13px;line-height:1.7;max-width:280px;}
+  .footer-col h4{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--marigold);margin-bottom:16px;}
+  .footer-col li{margin-bottom:10px;font-size:13.5px;}
+  .footer-col a:hover{color:var(--bone);}
+  .footer-bottom{
+    display:flex;justify-content:space-between;align-items:center;padding-top:26px;
+    font-family:var(--mono);font-size:11.5px;flex-wrap:wrap;gap:12px;
+  }
+
+  /* ---------- WHATSAPP FAB ---------- */
+  .fab{
+    position:fixed;bottom:26px;right:26px;z-index:90;
+    background:var(--marigold);color:var(--canopy);
+    width:60px;height:60px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 14px 30px rgba(0,0,0,0.28);
+    animation:pulse 2.8s ease-in-out infinite;
+  }
+  .fab svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8;}
+  @keyframes pulse{
+    0%,100%{box-shadow:0 14px 30px rgba(0,0,0,0.28),0 0 0 0 rgba(217,142,43,0.4);}
+    50%{box-shadow:0 14px 30px rgba(0,0,0,0.28),0 0 0 12px rgba(217,142,43,0);}
+  }
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in-view{opacity:1;transform:translateY(0);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:980px){
+    .nav-links{display:none;}
+    .nav-toggle{display:flex;}
+    .discover-grid{grid-template-columns:1fr;gap:34px;}
+    .reach-grid{grid-template-columns:1fr;}
+    .reach-map{min-height:280px;}
+    .track-grid{grid-template-columns:1fr;gap:34px;}
+    .badge-rail{grid-template-columns:repeat(2,1fr);}
+    .safety-grid{grid-template-columns:repeat(2,1fr);}
+    .g-grid{grid-template-columns:repeat(2,1fr);}
+    .gal-filter-count{display:none;}
+    .postcards{grid-template-columns:repeat(2,1fr);}
+    .price-grid{grid-template-columns:1fr;}
+    .custom-package{grid-template-columns:1fr;}
+    .custom-options{grid-template-columns:1fr 1fr;}
+    .price-card.popular{transform:none;}
+    .why-grid{grid-template-columns:1fr;gap:40px;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .hero-stats div{flex:1 1 45%;margin-bottom:18px;}
+    .fact-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:600px){
+    section{padding:74px 0;}
+    .hero{padding-top:150px;}
+    .badge-rail{grid-template-columns:1fr;}
+    .safety-grid{grid-template-columns:1fr;}
+    .g-grid{grid-template-columns:1fr;}
+    .postcards{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+    .cta-inner{flex-direction:column;align-items:flex-start;}
+    .fact-grid{grid-template-columns:1fr;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important;transition:none !important;}
+    .reveal,.badge-card,.g-tile{opacity:1 !important;transform:none !important;}
+  }
+
+  :focus-visible{outline:2px solid var(--marigold);outline-offset:3px;}
+</style>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#top" class="brand"><span class="brand-mark">K</span> Karavan</a>
+    <ul class="nav-links">
+      <li><a href="#discover">Discover Dudhwa</a></li>
+      <li><a href="#reach">How to Reach</a></li>
+      <li><a href="#expeditions">Expeditions</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#book">Book Now</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="https://wa.me/918795946584?text=I'm%20interested%20in%20a%20Dudhwa%20expedition" target="_blank" rel="noopener">Book on WhatsApp</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-skyline" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 180 L60 110 L110 180 L150 130 L190 180 L240 95 L290 180 L330 135 L380 180 L430 105 L480 180 L520 130 L570 180 L610 110 L660 180 L700 135 L750 180 L800 100 L850 180 L900 135 L950 180 L1000 105 L1050 180 L1100 130 L1150 180 L1200 115 L1200 200 L0 200 Z" fill="#1E3E33" opacity="0.55"/>
+      <path d="M0 200 L45 150 L90 200 L130 155 L175 200 L215 145 L265 200 L305 150 L350 200 L395 145 L440 200 L480 155 L525 200 L565 145 L610 200 L650 150 L695 200 L735 145 L780 200 L820 155 L865 200 L905 145 L950 200 L990 150 L1035 200 L1075 155 L1120 200 L1200 155 L1200 200 Z" fill="#16302A"/>
+    </svg>
+    <div class="hero-inner">
+      <span class="eyebrow">Terai Wilderness Expeditions · Dudhwa Tiger Reserve, India</span>
+      <h1>Karavan</h1>
+      <p class="subhead">Wild Terai, every way you travel.</p>
+      <p class="coords">27.5726° N · 80.5847° E — DUDHWA TIGER RESERVE, TERAI, INDIA</p>
+      <p class="hero-copy">From badge-based Junior Ranger expeditions for schools to weekend family safaris, corporate basecamps and solo naturalist trails — every journey into the last wild Terai starts here.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/918795946584?text=I'm%20interested%20in%20a%20Dudhwa%20expedition" target="_blank" rel="noopener">Book Now on WhatsApp</a>
+        <a class="btn btn-ghost-dark" href="#expeditions">Explore Expeditions</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>5</strong><span>Expedition Tracks</span></div>
+        <div><strong>47</strong><span>Mammal Species</span></div>
+        <div><strong>400+</strong><span>Recorded Birds</span></div>
+        <div><strong>1998</strong><span>Running Since</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOVER DUDHWA -->
+  <section class="on-light" id="discover">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Destination</span>
+        <h2>India's last wild Terai</h2>
+        <p>Before you pick a trip, know the place you're heading into.</p>
+      </div>
+      <div class="discover-grid">
+        <div class="discover-copy reveal">
+          <p>Dudhwa Tiger Reserve sits on the Himalayan foothills along the Indo-Nepal border in Uttar Pradesh — the last major remnant of the Terai ecosystem, a mosaic of dense sal forest, tall grassland and wetland habitats.</p>
+          <p>It shelters Bengal tigers, reintroduced one-horned rhinos, swamp deer (barasingha), gharials and otters, alongside 400+ recorded bird species. The reserve is made up of three connected forest blocks — the Dudhwa core zone, Kishanpur Wildlife Sanctuary and Katerniaghat Wildlife Sanctuary — together forming one of the most biodiverse corners of northern India.</p>
+          <p>The park is typically open from mid-November to mid-June and closed through the monsoon months, when the Terai's rivers run full and its trails are impassable.</p>
+          <div class="zone-tags">
+            <span class="zone-tag">Dudhwa Core Zone</span>
+            <span class="zone-tag">Kishanpur Wildlife Sanctuary</span>
+            <span class="zone-tag">Katerniaghat Wildlife Sanctuary</span>
+            <span class="zone-tag">Jhadi Tal Wetlands</span>
+            <span class="zone-tag">Satiyana Grasslands</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="habitat-illo">
+            <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="480" height="260" fill="#F7F3E8"/>
+              <circle cx="410" cy="46" r="26" fill="#D98E2B" opacity="0.9"/>
+              <path d="M0 130 Q60 100 120 122 T240 118 T360 128 T480 116 L480 260 L0 260 Z" fill="#B7CBBB" opacity="0.55"/>
+              <path d="M0 210c40-14 90-14 130 0s90 14 130 0 90-14 130 0 70 10 90 2V260H0Z" fill="#6E9A79" opacity="0.5"/>
+              <path d="M0 230c50-10 90-8 140 2s100 10 150 0 110-12 190-4V260H0Z" fill="#1E3E33"/>
+              <g fill="#16302A">
+                <path d="M40 230 L40 170 L28 190 L52 190 Z"/>
+                <path d="M40 195 L28 215 L52 215 Z"/>
+                <path d="M85 230 L85 160 L70 185 L100 185 Z"/>
+                <path d="M85 190 L70 210 L100 210 Z"/>
+                <path d="M130 230 L130 175 L118 195 L142 195 Z"/>
+                <path d="M130 200 L118 220 L142 220 Z"/>
+              </g>
+              <path d="M190 230 Q205 210 220 230 Q235 205 250 230 Q265 208 280 230 Z" fill="#274C3F"/>
+              <path d="M300 236 Q330 216 360 236 T420 234" stroke="#9FB6A9" stroke-width="2" fill="none" opacity="0.6"/>
+              <ellipse cx="360" cy="242" rx="70" ry="12" fill="#4C6E57" opacity="0.35"/>
+              <path d="M330 244c4-6 8-6 12 0M345 246c4-6 8-6 12 0M360 244c4-6 8-6 12 0" stroke="#DCE7DE" stroke-width="1.4" fill="none"/>
+              <text x="45" y="252" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4B5A4F" letter-spacing="1">SAL FOREST</text>
+              <text x="195" y="252" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4B5A4F" letter-spacing="1">GRASSLAND</text>
+              <text x="325" y="252" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4B5A4F" letter-spacing="1">WETLAND</text>
+            </svg>
+            <span class="habitat-caption">One reserve, three habitats — forest, grassland and wetland in a single mosaic.</span>
+          </div>
+          <div class="fact-grid reveal">
+          <div class="fact-card"><span class="flabel">Ecosystem</span><div class="fvalue">Terai forest, grassland &amp; wetland mosaic</div></div>
+          <div class="fact-card"><span class="flabel">Location</span><div class="fvalue">Lakhimpur Kheri, Uttar Pradesh — Indo-Nepal border</div></div>
+          <div class="fact-card"><span class="flabel">Best Time</span><div class="fvalue">Mid-November to mid-June</div></div>
+          <div class="fact-card"><span class="flabel">Signature Wildlife</span><div class="fvalue">Tigers, rhinos, swamp deer, gharials</div></div>
+          <div class="fact-card"><span class="flabel">Birdlife</span><div class="fvalue">400+ recorded species</div></div>
+          <div class="fact-card"><span class="flabel">Nearest Hub</span><div class="fvalue">Lucknow, then road via Palia</div></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO REACH -->
+  <section class="on-light alt" id="reach">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Getting There</span>
+        <h2>How to reach Dudhwa</h2>
+        <p>Plan the journey in — by air, by rail, or by road.</p>
+      </div>
+      <div class="reach-grid reveal">
+        <div class="reach-map">
+          <iframe
+            src="https://www.google.com/maps?q=Dudhwa+National+Park&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Map to Dudhwa National Park"></iframe>
+        </div>
+        <div class="reach-list">
+          <div class="reach-item">
+            <span class="reach-label">By Air</span>
+            <p>Nearest major airport is <strong>Lucknow (Chaudhary Charan Singh International Airport)</strong>, roughly a 5–6 hour drive to the reserve.</p>
+          </div>
+          <div class="reach-item">
+            <span class="reach-label">By Rail</span>
+            <p>Nearest railheads are <strong>Dudhwa</strong> and <strong>Palia</strong> stations, both on the broad-gauge line connecting to Lucknow and Delhi.</p>
+          </div>
+          <div class="reach-item">
+            <span class="reach-label">By Road</span>
+            <p>Well-connected by state highway from Lucknow and Delhi; we can arrange pickup from Lucknow, Palia or Dudhwa on request.</p>
+          </div>
+          <a class="btn btn-ghost-light" href="https://www.google.com/maps/dir/?api=1&destination=Dudhwa+National+Park" target="_blank" rel="noopener">Get Directions on Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPEDITIONS (TABS) -->
+  <section class="on-dark" id="expeditions">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Choose Your Expedition</span>
+        <h2>Four ways to experience Dudhwa</h2>
+        <p>Same wilderness, four different rhythms — pick the track built for how you're travelling.</p>
+      </div>
+
+      <div class="tab-nav" role="tablist">
+        <button class="tab-btn active" data-tab="schools" role="tab" aria-selected="true">Schools &amp; Colleges</button>
+        <button class="tab-btn" data-tab="family" role="tab" aria-selected="false">Family Groups</button>
+        <button class="tab-btn" data-tab="friends" role="tab" aria-selected="false">Friends Groups</button>
+        <button class="tab-btn" data-tab="corporate" role="tab" aria-selected="false">Corporate Groups</button>
+        <button class="tab-btn" data-tab="solo" role="tab" aria-selected="false">Individual Travellers</button>
+      </div>
+
+      <!-- SCHOOLS -->
+      <div class="tab-panel active" data-panel="schools">
+        <div class="track-grid">
+          <div>
+            <span class="track-kicker">Track 01 — Schools &amp; Colleges</span>
+            <h3>Mission Terai: The Junior Ranger Expedition</h3>
+            <p class="track-copy">Students don't attend a camp — they join a Ranger Corps. Mission Terai runs under our long-standing <strong>National Environment Science Camp (NEVSC)</strong> program, active since 1998. Across the expedition, they complete real field-science missions and earn a badge for each, closing with a torch-lit Ranger Passing-Out Ceremony.</p>
+            <div class="track-cta">
+              <a class="btn btn-primary" href="#pricing">View School Packages</a>
+              <a class="btn btn-ghost-dark" href="#badges">See the Badge System</a>
+            </div>
+          </div>
+          <ul class="track-highlights">
+            <li><span class="dot"></span><span class="h-text">Six field badges mapped to real science &amp; conservation topics</span></li>
+            <li><span class="dot"></span><span class="h-text">NEP 2020-aligned experiential learning outcomes</span></li>
+            <li><span class="dot"></span><span class="h-text">Fixed student-to-guide ratios and vetted safari routes</span></li>
+            <li><span class="dot"></span><span class="h-text">3, 5 or 7-day formats for schools and college field-study groups</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAMILY -->
+      <div class="tab-panel" data-panel="family">
+        <div class="track-grid">
+          <div>
+            <span class="track-kicker">Track 02 — Family Groups</span>
+            <h3>Wild Trails: Family Safari</h3>
+            <p class="track-copy">A slower, comfort-first way into the Terai — built for mixed ages, from grandparents to toddlers. Guided nature walks by day, campfire storytelling by night, and safaris the whole family rides together.</p>
+            <div class="track-cta">
+              <a class="btn btn-primary" href="https://wa.me/918795946584?text=I'm%20interested%20in%20the%20Family%20Safari" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+            </div>
+          </div>
+          <ul class="track-highlights">
+            <li><span class="dot"></span><span class="h-text">Family-sized tents and shared suites, not shared dorms</span></li>
+            <li><span class="dot"></span><span class="h-text">Kid-friendly nature trails, quizzes and a junior naturalist badge</span></li>
+            <li><span class="dot"></span><span class="h-text">Flexible weekend, long-weekend and school-holiday dates</span></li>
+            <li><span class="dot"></span><span class="h-text">Home-style Terai meals, dietary preferences accommodated</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FRIENDS -->
+      <div class="tab-panel" data-panel="friends">
+        <div class="track-grid">
+          <div>
+            <span class="track-kicker">Track 03 — Friends Groups</span>
+            <h3>Trailmates: Friends Expedition</h3>
+            <p class="track-copy">Built for the squad trip that actually happens — flexible headcounts, adventure-heavy days and zero itinerary politics. Off-roading by day, bonfire parties by night, and a shared dorm or private tent depending on how you roll.</p>
+            <div class="track-cta">
+              <a class="btn btn-primary" href="https://wa.me/918795946584?text=I'm%20interested%20in%20the%20Trailmates%20Friends%20Expedition" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+              <a class="btn btn-ghost-dark" href="#custom-package">Build a Custom Package</a>
+            </div>
+          </div>
+          <ul class="track-highlights">
+            <li><span class="dot"></span><span class="h-text">Flexible group size — from 2 to 20+ friends</span></li>
+            <li><span class="dot"></span><span class="h-text">Adventure-heavy: off-roading, night safaris, bonfire parties</span></li>
+            <li><span class="dot"></span><span class="h-text">Shared dorm tents or private tents, your call</span></li>
+            <li><span class="dot"></span><span class="h-text">Fully customisable — mix, drop or add activities freely</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CORPORATE -->
+      <div class="tab-panel" data-panel="corporate">
+        <div class="track-grid">
+          <div>
+            <span class="track-kicker">Track 04 — Corporate Groups</span>
+            <h3>Basecamp: Corporate Offsites</h3>
+            <p class="track-copy">Team offsites and CSR retreats that trade the conference room for a forest canopy. Structured team challenges by day, forest-healing wellness sessions and bonfire town-halls by evening.</p>
+            <div class="track-cta">
+              <a class="btn btn-primary" href="https://wa.me/918795946584?text=I'm%20interested%20in%20a%20Corporate%20Offsite" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+            </div>
+          </div>
+          <ul class="track-highlights">
+            <li><span class="dot"></span><span class="h-text">Team-building "Dares" and guided off-road convoys</span></li>
+            <li><span class="dot"></span><span class="h-text">Forest Healing wellness sessions for team wellbeing</span></li>
+            <li><span class="dot"></span><span class="h-text">Private meeting canopy with basic AV for town-halls</span></li>
+            <li><span class="dot"></span><span class="h-text">CSR-aligned visits to the rhino conservation project</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SOLO -->
+      <div class="tab-panel" data-panel="solo">
+        <div class="track-grid">
+          <div>
+            <span class="track-kicker">Track 05 — Individual Travellers</span>
+            <h3>The Solo Naturalist Trail</h3>
+            <p class="track-copy">Small-group safaris and flexible stays for solo travellers, birders and photographers who'd rather move at their own pace than join a fixed itinerary.</p>
+            <div class="track-cta">
+              <a class="btn btn-primary" href="https://wa.me/918795946584?text=I'm%20interested%20in%20the%20Solo%20Naturalist%20Trail" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+            </div>
+          </div>
+          <ul class="track-highlights">
+            <li><span class="dot"></span><span class="h-text">Small-group safaris, capped at 6 travellers</span></li>
+            <li><span class="dot"></span><span class="h-text">Photography-friendly schedules around golden-hour light</span></li>
+            <li><span class="dot"></span><span class="h-text">Budget dorm bed to private tent, your choice</span></li>
+            <li><span class="dot"></span><span class="h-text">Join any open batch — no minimum group size</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BADGES (Schools track detail) -->
+  <section class="on-light alt" id="badges">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Inside Mission Terai — NEVSC Schools &amp; Colleges Track</span>
+        <h2>Six badges. Six ways to fall in love with science.</h2>
+        <p>Each mission is mapped to a real skill, a real subject, and a real conservation story at Dudhwa.</p>
+      </div>
+      <div class="badge-rail" style="background:none;">
+
+        <div class="badge-card" style="background:var(--paper);border-color:var(--line-on-light);">
+          <div class="badge-stamp">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="4"/><circle cx="6" cy="8" r="1.6"/><circle cx="12" cy="5.5" r="1.6"/><circle cx="18" cy="8" r="1.6"/></svg>
+          </div>
+          <h3 style="color:var(--ink);">Wildlife Tracker</h3>
+          <span class="badge-subject">Zoology · Observation</span>
+          <p style="color:var(--ink-soft);">Safari zones; identifying pugmarks, calls and behaviour among 47 mammal species.</p>
+        </div>
+
+        <div class="badge-card" style="background:var(--paper);border-color:var(--line-on-light);">
+          <div class="badge-stamp">
+            <svg viewBox="0 0 24 24"><path d="M2 9c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/><path d="M2 15c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/></svg>
+          </div>
+          <h3 style="color:var(--ink);">River Guardian</h3>
+          <span class="badge-subject">Ecology · Chemistry</span>
+          <p style="color:var(--ink-soft);">Wetland ecology of Jhadi Tal; testing water quality and studying gharials, otters.</p>
+        </div>
+
+        <div class="badge-card" style="background:var(--paper);border-color:var(--line-on-light);">
+          <div class="badge-stamp">
+            <svg viewBox="0 0 24 24"><path d="M4 17c0-5 3-9 6-9 1.5 0 2 1 3.5 1S16 8 18 8l-1 3-3 1c1 1 1.5 2.5 1.5 5"/><path d="M6 17h11"/></svg>
+          </div>
+          <h3 style="color:var(--ink);">Rhino Ranger</h3>
+          <span class="badge-subject">Conservation Biology</span>
+          <p style="color:var(--ink-soft);">Visit the Rhino Rehabilitation Project; conservation and rewilding science in action.</p>
+        </div>
+
+        <div class="badge-card" style="background:var(--paper);border-color:var(--line-on-light);">
+          <div class="badge-stamp">
+            <svg viewBox="0 0 24 24"><path d="M20 4c-8 0-14 6-14 14 8 0 14-6 14-14z"/><path d="M6 18L18 6"/></svg>
+          </div>
+          <h3 style="color:var(--ink);">Bird Scout</h3>
+          <span class="badge-subject">Ornithology · Data</span>
+          <p style="color:var(--ink-soft);">400+ recorded species; a guided birding walk and building your own field log.</p>
+        </div>
+
+        <div class="badge-card" style="background:var(--paper);border-color:var(--line-on-light);">
+          <div class="badge-stamp">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="2.6"/><circle cx="16" cy="9.5" r="2"/><path d="M4 19c0-3.5 2.5-6 5-6s5 2.5 5 6"/><path d="M13.5 14c2 .2 3.5 2.2 3.5 5"/></svg>
+          </div>
+          <h3 style="color:var(--ink);">Culture Keeper</h3>
+          <span class="badge-subject">Anthropology · Heritage</span>
+          <p style="color:var(--ink-soft);">A living session with the Tharu tribal community and their forest wisdom.</p>
+        </div>
+
+        <div class="badge-card" style="background:var(--paper);border-color:var(--line-on-light);">
+          <div class="badge-stamp">
+            <svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 3v16"/><path d="M8 13h8"/></svg>
+          </div>
+          <h3 style="color:var(--ink);">Camp Survivalist</h3>
+          <span class="badge-subject">Teamwork · Resilience</span>
+          <p style="color:var(--ink-soft);">Off-roading, campfire skills, teamwork dares, and reading the night sky.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ITINERARY -->
+  <section class="on-light" id="itinerary">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Sample Expedition</span>
+        <h2>A five-day field journal</h2>
+        <p>Shown here: the Schools &amp; Colleges 5-day format. Family, Corporate and Individual itineraries run shorter and more flexible — ask us for options.</p>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="day">
+          <div class="day-head"><span class="day-tag">Day 01</span><h3>Arrival &amp; Induction</h3></div>
+          <p>Camp orientation, safety briefing, and the Ranger Corps induction ceremony.</p>
+        </div>
+        <div class="day">
+          <div class="day-head"><span class="day-tag">Day 02</span><h3>Kishanpur Range</h3></div>
+          <p>Wildlife Tracker + Bird Scout badges — safari drive and the Jhadi Tal wetlands.</p>
+        </div>
+        <div class="day">
+          <div class="day-head"><span class="day-tag">Day 03</span><h3>Core Zone &amp; Tharu Village</h3></div>
+          <p>River Guardian + Culture Keeper badges — a drive through the core forest to the Indo-Nepal border.</p>
+        </div>
+        <div class="day">
+          <div class="day-head"><span class="day-tag">Day 04</span><h3>Satiyana Grasslands</h3></div>
+          <p>Rhino Ranger badge — the Rhino Rehabilitation Project and 150-foot watchtower views.</p>
+        </div>
+        <div class="day">
+          <div class="day-head"><span class="day-tag">Day 05</span><h3>Katerniya Ghat &amp; Farewell</h3></div>
+          <p>Camp Survivalist badge, the Ranger Passing-Out Ceremony, and departure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="on-dark">
+    <div class="wrap">
+      <div class="why-grid">
+        <div class="why-copy reveal">
+          <span class="eyebrow">Fast Facts</span>
+          <h2 style="margin-top:16px;font-size:clamp(30px,4vw,44px);color:var(--bone);text-transform:none;">Built on twenty-plus years in the Terai</h2>
+          <p style="margin-top:20px;">We've been running structured expeditions into Dudhwa since 1998 — long before "experiential travel" was a trend. That means vetted routes, dependable guides, and relationships with the forest authorities and Tharu community that a new operator simply can't match.</p>
+        </div>
+        <div class="stamp-grid reveal">
+          <div class="stamp"><strong>1998</strong><span>Running Expeditions Since</span></div>
+          <div class="stamp"><strong>47</strong><span>Mammal Species</span></div>
+          <div class="stamp"><strong>400+</strong><span>Bird Species</span></div>
+          <div class="stamp"><strong>5</strong><span>Expedition Tracks</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section class="on-light" id="safety">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Safety &amp; Logistics</span>
+        <h2>Adventurous for the traveller. Worry-free for you.</h2>
+      </div>
+      <div class="safety-grid reveal">
+        <div class="safety-card">
+          <div class="safety-icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6z"/></svg></div>
+          <h3>Trained Supervision</h3>
+          <p>Dedicated guides and on-ground staff maintain a fixed guest-to-guide ratio at all times.</p>
+        </div>
+        <div class="safety-card">
+          <div class="safety-icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-11.5A7 7 0 0119 9.5C19 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></div>
+          <h3>Fixed, Vetted Routes</h3>
+          <p>Safari zones, watchtowers and river crossings pre-approved by forest authorities.</p>
+        </div>
+        <div class="safety-card">
+          <div class="safety-icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 3v16"/><path d="M8 13h8"/></svg></div>
+          <h3>Managed Stay &amp; Meals</h3>
+          <p>Hygienic accommodation, structured mealtimes, and safe drinking water throughout.</p>
+        </div>
+        <div class="safety-card">
+          <div class="safety-icon"><svg viewBox="0 0 24 24"><path d="M4 5h4l2 5-2.5 1.5a12 12 0 006 6L15 15l5 2v4c0 1-1 1.7-2 1.6C10 22 2 14 1.4 6c-.1-1 .6-2 1.6-2z"/></svg></div>
+          <h3>Direct Communication</h3>
+          <p>Daily updates and an emergency contact line open through the full expedition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY (full, merged in-page) -->
+  <section class="on-dark" id="gallery">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Field Log</span>
+        <h2>The Terai in frames</h2>
+        <p>Wildlife, landscapes, camp life and culture — a look at what every batch moves through, across all five expedition tracks.</p>
+      </div>
+
+      <div class="gal-filter-nav reveal">
+        <button class="gal-filter-btn active" data-filter="all">All</button>
+        <button class="gal-filter-btn" data-filter="wildlife">Wildlife</button>
+        <button class="gal-filter-btn" data-filter="landscape">Jungle &amp; Landscapes</button>
+        <button class="gal-filter-btn" data-filter="camp">Campsite</button>
+        <button class="gal-filter-btn" data-filter="activities">Activities &amp; Dares</button>
+        <button class="gal-filter-btn" data-filter="culture">People &amp; Culture</button>
+        <span class="gal-filter-count" id="filterCount"></span>
+      </div>
+
+      <div class="g-grid" id="gGrid">
+
+        <div class="g-tile" data-cat="wildlife">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="4"/><circle cx="6" cy="8" r="1.6"/><circle cx="12" cy="5.5" r="1.6"/><circle cx="18" cy="8" r="1.6"/></svg>
+          <div><span class="cat">Wildlife</span><h3>Tiger Country</h3><p class="desc">Pugmarks along the core-zone trail at dawn.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="wildlife">
+          <svg viewBox="0 0 24 24"><path d="M4 17c0-5 3-9 6-9 1.5 0 2 1 3.5 1S16 8 18 8l-1 3-3 1c1 1 1.5 2.5 1.5 5"/><path d="M6 17h11"/></svg>
+          <div><span class="cat">Wildlife</span><h3>The Rhino Project</h3><p class="desc">Reintroduced one-horned rhinos at the rehabilitation site.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="wildlife">
+          <svg viewBox="0 0 24 24"><path d="M20 4c-8 0-14 6-14 14 8 0 14-6 14-14z"/><path d="M6 18L18 6"/><circle cx="9" cy="9" r="1"/></svg>
+          <div><span class="cat">Wildlife</span><h3>Bird Scout Walk</h3><p class="desc">A white-throated kingfisher, one of 450+ recorded species.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="wildlife">
+          <svg viewBox="0 0 24 24"><ellipse cx="12" cy="14" rx="9" ry="3"/><path d="M4 14c0-1 3-2 8-2s8 1 8 2"/><path d="M15 10l3-2"/></svg>
+          <div><span class="cat">Wildlife</span><h3>Gharials at Jhadi Tal</h3><p class="desc">Basking on the wetland's sandbanks midday.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="landscape">
+          <svg viewBox="0 0 24 24"><path d="M12 2l7 8h-4l5 7h-16l5-7H5z"/><path d="M12 17v5"/></svg>
+          <div><span class="cat">Jungle</span><h3>The Sal Forest</h3><p class="desc">Canopy so dense, daylight barely reaches the floor.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="landscape">
+          <svg viewBox="0 0 24 24"><path d="M2 9c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/><path d="M2 15c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/></svg>
+          <div><span class="cat">Landscape</span><h3>Jhadi Tal Wetlands</h3><p class="desc">Still water, reflected sky, a mosaic of reed and river.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="landscape">
+          <svg viewBox="0 0 24 24"><path d="M3 20c3-8 6-8 9-8s6 0 9 8"/><path d="M12 12V4"/><path d="M9 7l3-3 3 3"/></svg>
+          <div><span class="cat">Landscape</span><h3>Satiyana Grasslands</h3><p class="desc">Seen from the 150-foot watchtower at golden hour.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="landscape">
+          <svg viewBox="0 0 24 24"><path d="M4 18c3-6 5-9 8-9s5 3 8 9"/><circle cx="12" cy="6" r="2"/></svg>
+          <div><span class="cat">Landscape</span><h3>Terai Sunrise</h3><p class="desc">Mist lifting off the grassland before the first safari.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="landscape">
+          <svg viewBox="0 0 24 24"><path d="M4 20c2-8 4-14 8-14s6 6 8 14"/><path d="M8 20h8"/><path d="M9 14h6"/></svg>
+          <div><span class="cat">Jungle</span><h3>Deep Jungle Trail</h3><p class="desc">The core-zone track where the sal forest closes overhead.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="landscape">
+          <svg viewBox="0 0 24 24"><path d="M3 17l4-9 4 9M8 12h6M12 17l4-11 5 11"/></svg>
+          <div><span class="cat">Jungle</span><h3>Sal Canopy, Midday</h3><p class="desc">Even at noon, little sunlight reaches the forest floor.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="camp">
+          <svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 3v16"/><path d="M8 13h8"/><path d="M2 20l4-7M22 20l-4-7"/></svg>
+          <div><span class="cat">Campsite</span><h3>The Campsite</h3><p class="desc">Home base between the day's field missions.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="camp">
+          <svg viewBox="0 0 24 24"><path d="M12 2c2 4 4 5 4 8a4 4 0 01-8 0c0-3 2-4 4-8z"/><path d="M4 21h16"/></svg>
+          <div><span class="cat">Campsite</span><h3>The Campfire Circle</h3><p class="desc">Stories, songs and the next day's briefing.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="camp">
+          <svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="2"/><circle cx="12" cy="13" r="3.4"/><path d="M9 7l1.5-2h3L15 7"/></svg>
+          <div><span class="cat">Campsite</span><h3>Field Log &amp; Camera</h3><p class="desc">Photography Camp module, golden-hour session.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="camp">
+          <svg viewBox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/><path d="M4 13h16"/></svg>
+          <div><span class="cat">Campsite</span><h3>The Dining &amp; Kitchen Area</h3><p class="desc">Built Tharu-style, in clay and grass — cooler than concrete.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="camp">
+          <svg viewBox="0 0 24 24"><path d="M12 21V9M8 9h8l-1-6H9z"/><path d="M6 21h12"/></svg>
+          <div><span class="cat">Campsite</span><h3>The Watchtower</h3><p class="desc">150 feet up, looking out over the Satiyana grasslands.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="activities">
+          <svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="10" rx="1.5"/><path d="M7 9V6a5 5 0 0110 0v3"/></svg>
+          <div><span class="cat">Activities</span><h3>Off-Road Convoy</h3><p class="desc">The Camp Survivalist badge run, mid-forest track.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="activities">
+          <svg viewBox="0 0 24 24"><path d="M12 21V9M12 9l5-6M12 9L7 3"/><path d="M4 21h16"/><circle cx="17" cy="3" r="1.4"/><circle cx="7" cy="3" r="1.4"/></svg>
+          <div><span class="cat">Activities</span><h3>Weathering the Woods</h3><p class="desc">Route-map navigation through the forest, flag post by flag post.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="activities">
+          <svg viewBox="0 0 24 24"><path d="M4 20V6M4 6l4 2-4 2"/><path d="M20 20V6M20 6l-4 2 4 2"/><path d="M9 20h6"/></svg>
+          <div><span class="cat">Activities</span><h3>The Dares Challenge</h3><p class="desc">Tug-of-War and Capture the Flag — teamwork under a mentor's eye.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="activities">
+          <svg viewBox="0 0 24 24"><path d="M12 2c2 4 4 5 4 8a4 4 0 01-8 0c0-3 2-4 4-8z"/><path d="M4 21h16"/><circle cx="9" cy="16" r="1"/><circle cx="15" cy="17" r="1"/></svg>
+          <div><span class="cat">Activities</span><h3>Campfire Cookout</h3><p class="desc">Campers turning chefs over an open flame.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="activities">
+          <svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M9 14h6M12 9v5"/></svg>
+          <div><span class="cat">Activities</span><h3>Night Quiz Under Canvas</h3><p class="desc">Wildlife trivia by lantern light, before lights out.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="culture">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="2.6"/><circle cx="16" cy="9.5" r="2"/><path d="M4 19c0-3.5 2.5-6 5-6s5 2.5 5 6"/><path d="M13.5 14c2 .2 3.5 2.2 3.5 5"/></svg>
+          <div><span class="cat">Culture</span><h3>Tharu Village Visit</h3><p class="desc">A living session on forest wisdom and tribal craft.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="culture">
+          <svg viewBox="0 0 24 24"><ellipse cx="12" cy="8" rx="6" ry="3"/><path d="M6 8v8a6 3 0 0012 0V8"/></svg>
+          <div><span class="cat">Culture</span><h3>Evening Drum Circle</h3><p class="desc">Tharu folk rhythms around the last night's fire.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="culture">
+          <svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.8 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg>
+          <div><span class="cat">Culture</span><h3>The Badge Ceremony</h3><p class="desc">Junior Rangers receiving their badges, torch-lit.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="wildlife">
+          <svg viewBox="0 0 24 24"><path d="M6 20c0-6 2-9 6-9s6 3 6 9"/><path d="M9 11L7 4M15 11l2-7"/></svg>
+          <div><span class="cat">Wildlife</span><h3>Swamp Deer Herd</h3><p class="desc">Barasingha grazing the Satiyana grassland margins.</p></div>
+        </div>
+
+        <div class="g-tile" data-cat="landscape">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+          <div><span class="cat">Landscape</span><h3>Dry-Season Light</h3><p class="desc">Peak safari season, mid-November to mid-June.</p></div>
+        </div>
+
+      </div>
+
+      <p class="gal-note">This gallery uses original field-log style illustrations rather than photography. Past traveller with photos to share? Message us on WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="on-light alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">In Their Own Words</span>
+        <h2>Notes from past travellers</h2>
+      </div>
+      <div class="postcards reveal">
+        <div class="postcard">
+          <span class="mark">&ldquo;</span>
+          <p class="quote">I earned my Rhino Ranger badge and I still have it pinned to my school bag. It's the first time I saw conservation as something real, not a chapter.</p>
+          <div class="who">Class IX Student · Lucknow</div>
+        </div>
+        <div class="postcard">
+          <span class="mark">&ldquo;</span>
+          <p class="quote">Guides were excellent, safety protocol was clear from day one, and the badge structure kept 40 students engaged for five straight days. Rare to find.</p>
+          <div class="who">Class Teacher · Delhi NCR</div>
+        </div>
+        <div class="postcard">
+          <span class="mark">&ldquo;</span>
+          <p class="quote">We took our whole team off-grid for three days. Best offsite we've run — no PowerPoints, just a forest and a genuinely good facilitator.</p>
+          <div class="who">HR Lead · Corporate Offsite</div>
+        </div>
+        <div class="postcard">
+          <span class="mark">&ldquo;</span>
+          <p class="quote">Travelled solo, joined a six-person safari group, and had guides who actually knew where the birds would be at 6am. Exactly what I wanted.</p>
+          <div class="who">Solo Traveller · Bengaluru</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="on-dark" id="pricing">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Packages &amp; Rates</span>
+        <h2>Choose your stay</h2>
+        <p>Straightforward pricing, per person, double/twin share. Message us on WhatsApp for group and school rates.</p>
+      </div>
+
+      <div class="price-grid reveal">
+        <div class="price-card popular">
+          <span class="price-tag">Most Popular</span>
+          <h3>3 Days / 2 Nights</h3>
+          <span class="price-days">Double Share</span>
+          <div class="price-value">₹5,500</div>
+          <span class="price-sub">per person</span>
+          <ul class="price-feats">
+            <li>2 night stay</li>
+            <li>6 veg meals</li>
+            <li>Evening tea &amp; snacks</li>
+            <li>Campfire</li>
+          </ul>
+          <a class="btn btn-primary" style="background:var(--canopy);color:var(--bone);" href="#book">Book This Package</a>
+        </div>
+        <div class="price-card">
+          <h3>2 Days / 1 Night</h3>
+          <span class="price-days">Twin Share</span>
+          <div class="price-value">₹3,000</div>
+          <span class="price-sub">per person</span>
+          <ul class="price-feats">
+            <li>1 night stay</li>
+            <li>3 veg meals</li>
+            <li>Evening tea &amp; snacks</li>
+            <li>Campfire</li>
+          </ul>
+          <a class="btn btn-ghost-dark" href="#book">Book This Package</a>
+        </div>
+      </div>
+      <p class="pricing-note">Schools, colleges, corporate and large group rates vary by size and season — <a href="https://wa.me/918795946584?text=I'd%20like%20a%20quote" target="_blank" rel="noopener">message us on WhatsApp</a> for a quote.</p>
+    </div>
+  </section>
+
+  <!-- BOOK NOW -->
+  <section class="on-light" id="book">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Book Your Stay</span>
+        <h2>Reserve your dates</h2>
+        <p>Pick a package, choose your dates, and pay securely online.</p>
+      </div>
+
+      <div class="booking-box reveal">
+        <div class="booking-stepper" id="bookStepper">
+          <span class="bstep active" data-bstep="1">1. Package</span>
+          <span class="bstep" data-bstep="2">2. Dates &amp; Guests</span>
+          <span class="bstep" data-bstep="3">3. Details</span>
+          <span class="bstep" data-bstep="4">4. Payment</span>
+        </div>
+
+        <!-- BOOK STEP 1 -->
+        <div class="bpanel active" data-bpanel="1">
+          <div class="bpkg-grid">
+            <div class="bpkg-card" data-pkg="3d2n" data-price="5500" data-nights="2" data-meals="6">
+              <h4>3 Days / 2 Nights</h4>
+              <span class="bpkg-share">Double Share</span>
+              <div class="bpkg-price">₹5,500 <small>/ person</small></div>
+              <ul><li>2 night stay</li><li>6 veg meals</li><li>Evening tea &amp; snacks</li><li>Campfire</li></ul>
+            </div>
+            <div class="bpkg-card" data-pkg="2d1n" data-price="3000" data-nights="1" data-meals="3">
+              <h4>2 Days / 1 Night</h4>
+              <span class="bpkg-share">Twin Share</span>
+              <div class="bpkg-price">₹3,000 <small>/ person</small></div>
+              <ul><li>1 night stay</li><li>3 veg meals</li><li>Evening tea &amp; snacks</li><li>Campfire</li></ul>
+            </div>
+          </div>
+          <div class="bnav">
+            <span></span>
+            <button class="btn btn-primary" id="bnext1" disabled>Continue</button>
+          </div>
+        </div>
+
+        <!-- BOOK STEP 2 -->
+        <div class="bpanel" data-bpanel="2">
+          <div class="bfield-grid">
+            <div class="bfield"><label>Check-in Date</label><input type="date" id="bCheckIn"></div>
+            <div class="bfield"><label>Number of Guests</label>
+              <div class="bstepper"><button id="bGuestMinus">−</button><span id="bGuestCount">2</span><button id="bGuestPlus">+</button></div>
+            </div>
+          </div>
+          <p class="bhint" id="bDatesHint">Guests are paired on double/twin share — odd numbers get one single-use room at the same per-person rate.</p>
+          <div class="bnav">
+            <button class="btn btn-ghost" data-bback="1">Back</button>
+            <button class="btn btn-primary" id="bnext2" disabled>Continue</button>
+          </div>
+        </div>
+
+        <!-- BOOK STEP 3 -->
+        <div class="bpanel" data-bpanel="3">
+          <div class="bfield-grid">
+            <div class="bfield"><label>Full Name</label><input type="text" id="bName" placeholder="Your name"></div>
+            <div class="bfield"><label>Phone / WhatsApp</label><input type="tel" id="bPhone" placeholder="+91"></div>
+            <div class="bfield"><label>Email</label><input type="email" id="bEmail" placeholder="you@email.com"></div>
+            <div class="bfield"><label>Special Requests (optional)</label><input type="text" id="bNotes" placeholder="Dietary needs, etc."></div>
+          </div>
+          <div class="bnav">
+            <button class="btn btn-ghost" data-bback="2">Back</button>
+            <button class="btn btn-primary" id="bnext3">Continue</button>
+          </div>
+        </div>
+
+        <!-- BOOK STEP 4 -->
+        <div class="bpanel" data-bpanel="4">
+          <div id="bReviewWrap">
+            <div class="breview" id="bReview"></div>
+            <p class="bhint">This checkout opens in Razorpay <em>test mode</em> for demonstration. Real payments need a live Razorpay account and a backend to verify each transaction.</p>
+            <div class="bnav">
+              <button class="btn btn-ghost" data-bback="3">Back</button>
+              <button class="btn btn-primary" id="bPayBtn">Pay Now</button>
+            </div>
+          </div>
+          <div class="bsuccess" id="bSuccess" style="display:none;">
+            <div class="bok">✓</div>
+            <h3>Booking Confirmed</h3>
+            <p>A confirmation has been sent to your email and WhatsApp. We'll be in touch if anything needs confirming.</p>
+            <div class="bconf" id="bConfCode"></div>
+          </div>
+        </div>
+
+        <div class="bsummary">
+          <h4>Your Booking</h4>
+          <div class="brow"><span>Package</span><span id="bsPkg">—</span></div>
+          <div class="brow"><span>Check-in</span><span id="bsDate">—</span></div>
+          <div class="brow"><span>Guests</span><span id="bsGuests">2</span></div>
+          <div class="brow total"><span>Total</span><span id="bsTotal">₹0</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" id="contact">
+    <div class="wrap cta-inner">
+      <h2>Ready for your Terai expedition?</h2>
+      <div class="cta-side">
+        Vikrant Nath — +91 98390 73822<br>
+        Deepti — +91 94511 75539<br>
+        Vivek Srivastava — +91 93058 95360<br>
+        <a href="https://wa.me/918795946584?text=I'm%20interested%20in%20your%20expeditions" target="_blank" rel="noopener">Message us on WhatsApp →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand"><span class="brand-mark">K</span> Karavan</a>
+        <p>Running school &amp; college trips, family safaris, corporate offsites and solo naturalist trails into Dudhwa Tiger Reserve since 1998.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#discover">Discover Dudhwa</a></li>
+          <li><a href="#reach">How to Reach</a></li>
+          <li><a href="#expeditions">Expeditions</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>40, Usman Enclave, Aliganj Ext.</li>
+          <li>Sector 'O', Lucknow 226024</li>
+          <li>Uttar Pradesh, India</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/nevscdudhwa/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/nevscamp/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/user/karavanindia/" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Karavan · Operating in Dudhwa Tiger Reserve since 1998</span>
+      <span><a href="#">Terms of Use</a> &nbsp;·&nbsp; <a href="#">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/918795946584?text=I'm%20interested%20in%20a%20Dudhwa%20expedition" target="_blank" rel="noopener" aria-label="Book on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1112 20a8 8 0 01-4.2-1.2z"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6"/></svg>
+</a>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.querySelector('.nav-links');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.style.display === 'flex';
+    navLinks.style.display = isOpen ? 'none' : 'flex';
+    navLinks.style.cssText += isOpen ? '' : 'position:absolute;top:64px;left:0;right:0;flex-direction:column;background:rgba(22,48,42,0.98);padding:24px 28px;gap:18px;';
+  });
+
+  // Expedition tabs
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      tabPanels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      document.querySelector(`.tab-panel[data-panel="${btn.dataset.tab}"]`).classList.add('active');
+    });
+  });
+
+  // Gallery filters
+  const galBtns = document.querySelectorAll('.gal-filter-btn');
+  const galTiles = document.querySelectorAll('.g-tile');
+  const galCount = document.getElementById('filterCount');
+  function applyGalFilter(cat){
+    let shown = 0;
+    galTiles.forEach(t => {
+      const match = cat === 'all' || t.dataset.cat === cat;
+      t.classList.toggle('gal-hidden', !match);
+      if (match) shown++;
+    });
+    if (galCount) galCount.textContent = shown + ' of ' + galTiles.length;
+  }
+  galBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      galBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyGalFilter(btn.dataset.filter);
+    });
+  });
+  applyGalFilter('all');
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal, .badge-card, .g-tile');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // ---------- INLINE BOOKING FLOW ----------
+  const bstate = { pkg:null, price:0, nights:0, meals:0, share:'', checkIn:null, guests:2, contact:{} };
+
+  function bGoTo(n){
+    document.querySelectorAll('.bpanel').forEach(p => p.classList.toggle('active', p.dataset.bpanel == n));
+    document.querySelectorAll('.bstep').forEach(s => {
+      const sn = +s.dataset.bstep;
+      s.classList.toggle('active', sn === n);
+      s.classList.toggle('done', sn < n);
+    });
+  }
+  document.querySelectorAll('[data-bback]').forEach(b => b.addEventListener('click', () => bGoTo(+b.dataset.bback)));
+
+  document.querySelectorAll('.bpkg-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.bpkg-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      bstate.pkg = card.dataset.pkg;
+      bstate.price = +card.dataset.price;
+      bstate.nights = +card.dataset.nights;
+      bstate.meals = +card.dataset.meals;
+      bstate.share = card.querySelector('.bpkg-share').textContent;
+      document.getElementById('bnext1').disabled = false;
+      document.getElementById('bsPkg').textContent = card.querySelector('h4').textContent;
+      bUpdateSummary();
+    });
+  });
+  document.getElementById('bnext1').addEventListener('click', () => bGoTo(2));
+
+  const bCheckIn = document.getElementById('bCheckIn');
+  bCheckIn.min = new Date().toISOString().split('T')[0];
+  bCheckIn.addEventListener('change', () => {
+    bstate.checkIn = bCheckIn.value;
+    document.getElementById('bnext2').disabled = !bCheckIn.value;
+    document.getElementById('bsDate').textContent = bCheckIn.value ? new Date(bCheckIn.value).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}) : '—';
+    bUpdateSummary();
+  });
+  document.getElementById('bGuestMinus').addEventListener('click', () => {
+    bstate.guests = Math.max(1, bstate.guests - 1);
+    document.getElementById('bGuestCount').textContent = bstate.guests;
+    document.getElementById('bsGuests').textContent = bstate.guests;
+    bUpdateSummary();
+  });
+  document.getElementById('bGuestPlus').addEventListener('click', () => {
+    bstate.guests = Math.min(30, bstate.guests + 1);
+    document.getElementById('bGuestCount').textContent = bstate.guests;
+    document.getElementById('bsGuests').textContent = bstate.guests;
+    bUpdateSummary();
+  });
+  document.getElementById('bnext2').addEventListener('click', () => bGoTo(3));
+
+  document.getElementById('bnext3').addEventListener('click', () => {
+    bstate.contact = {
+      name: document.getElementById('bName').value || '—',
+      phone: document.getElementById('bPhone').value || '—',
+      email: document.getElementById('bEmail').value || '—',
+      notes: document.getElementById('bNotes').value || '—'
+    };
+    bRenderReview();
+    bGoTo(4);
+  });
+
+  function bTotal(){ return bstate.price * bstate.guests; }
+
+  function bUpdateSummary(){
+    document.getElementById('bsTotal').textContent = '₹' + bTotal().toLocaleString('en-IN');
+  }
+
+  function bRenderReview(){
+    document.getElementById('bReview').innerHTML = `
+      <div class="brow"><span class="k">Package</span><span class="v">${bstate.pkg === '3d2n' ? '3 Days / 2 Nights' : '2 Days / 1 Night'}</span></div>
+      <div class="brow"><span class="k">Share Type</span><span class="v">${bstate.share}</span></div>
+      <div class="brow"><span class="k">Check-in</span><span class="v">${new Date(bstate.checkIn).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</span></div>
+      <div class="brow"><span class="k">Guests</span><span class="v">${bstate.guests}</span></div>
+      <div class="brow"><span class="k">Rate</span><span class="v">₹${bstate.price.toLocaleString('en-IN')} / person</span></div>
+      <div class="brow"><span class="k">Contact</span><span class="v">${bstate.contact.name} · ${bstate.contact.phone}</span></div>
+      <div class="brow"><span class="k">Total Payable</span><span class="v">₹${bTotal().toLocaleString('en-IN')}</span></div>
+    `;
+  }
+
+  document.getElementById('bPayBtn').addEventListener('click', () => {
+    const total = bTotal();
+
+    // NOTE FOR THE SITE OWNER / DEVELOPER:
+    // Client-only Razorpay Checkout using a public TEST key, for demonstration.
+    // For real payments: create the Razorpay Order server-side, pass its order_id
+    // into this options object, and verify the payment signature server-side in
+    // the handler callback before treating a booking as confirmed.
+
+    if (typeof Razorpay === 'undefined') {
+      bShowSuccess('DEMO-' + Math.random().toString(36).slice(2,8).toUpperCase());
+      return;
+    }
+    const options = {
+      key: 'rzp_test_1DP5mmOlF5G5ag',
+      amount: total * 100,
+      currency: 'INR',
+      name: 'Karavan — Dudhwa Tiger Reserve',
+      description: (bstate.pkg === '3d2n' ? '3D/2N Package' : '2D/1N Package') + ' · ' + bstate.guests + ' guest(s)',
+      prefill: { name: bstate.contact.name, email: bstate.contact.email, contact: bstate.contact.phone },
+      theme: { color: '#16302A' },
+      handler: function(response){
+        bShowSuccess(response.razorpay_payment_id || ('DEMO-' + Math.random().toString(36).slice(2,8).toUpperCase()));
+      },
+      modal: { ondismiss: function(){} }
+    };
+    new Razorpay(options).open();
+  });
+
+  function bShowSuccess(code){
+    document.getElementById('bReviewWrap').style.display = 'none';
+    document.getElementById('bSuccess').style.display = 'block';
+    document.getElementById('bConfCode').textContent = 'Confirmation Ref: ' + code;
+  }
+</script>
+
+</body>
+</html>
